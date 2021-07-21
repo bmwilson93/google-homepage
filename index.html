@@ -15,21 +15,47 @@
       .search {
         margin-top: 25px;
       }
+      .submit {
+        margin-top: 25px;
+        margin-right: 15px;
+      }
       input {
         width: 100%;
         padding: 4px;
         border-radius: 20px;
         border: 1px solid grey;
         }
+      a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+      }
+      .sign-in {
+        float: right;
+      }
+      .about {
+        float: left;
+      }
+      li {
+        display: inline-block;
+      }
+      footer {
+        border-top: 1px solid grey;
+        background-color: #2222;
+      }
     </style>
 
   </head>
   <body>
     <!-- navbar -->
     <div class="navbar">
-      <a href="#">About</a>
-      <a href="#">Store</a>
-      <div>
+      <div class="about">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Store</a></li>
+      </ul>
+      </div>
+      <div class="sign-in">
         <a href="#">Gmail</a>
         <a href="#">Images</a>
         <button>Sign in</button>
@@ -47,6 +73,25 @@
         <input type="text">
       </form>
     </div>
+
+    <div class="submit center">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-left">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search Works</a>
+    </div>
+    <div class="container-right">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
+    </div>
+    </footer>
 
   </body>
 </html>
