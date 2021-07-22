@@ -15,18 +15,22 @@
         align-items: center;
         justify-content: center;
         }
-      .search {
-        margin-top: 25px;
-      }
       .submit {
         margin-top: 25px;
         margin-right: 15px;
       }
+      .search {
+        margin-top: 35px;
+      }
       input {
-        width: 100%;
-        padding: 4px;
-        border-radius: 20px;
-        border: 1px solid #222;
+        height: 40px;
+      width: 500px;
+      padding: 0px, 40px;
+      border-width: 1pt;
+      border-style: solid;
+      border-color: rgba(201, 202, 201, 0.973);
+      border-radius: 50px;
+      margin-bottom: 20px;
         }
       a {
         text-decoration: none;
@@ -67,6 +71,18 @@
       li {
         display: inline-block;
         padding-right: 15px;
+      }
+      .search-button {
+        background-color: #f8f9fa;
+        border: none;
+        color: #202124;
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 4px;
+      }
+      .submit {
+        margin-left: 25px;
       }
       footer {
         position: absolute;
@@ -125,8 +141,8 @@
       </div>
 
       <div class="submit">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <button class="search-button">Google Search</button>
+        <button class="search-button">I'm Feeling Lucky</button>
       </div>
 
     </div>
