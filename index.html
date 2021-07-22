@@ -6,9 +6,12 @@
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
       }
       .center {
+        padding-top: 20%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         }
@@ -23,25 +26,66 @@
         width: 100%;
         padding: 4px;
         border-radius: 20px;
-        border: 1px solid grey;
+        border: 1px solid #222;
         }
       a {
         text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-size: 13px;
+        color: #222;
+        font-size: 14px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
       .sign-in {
-        float: right;
+        justify-self: flex-end;
+        padding-right: 30px;
       }
       .about {
-        float: left;
+        justify-self: flex-start;
+        padding-left: 0;
+      }
+      #sign-in-button {
+        padding: 8px 25px 8px 25px;
+        background: #1a73e8;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+      }
+      #sign-in-button:hover {
+        background: #2b7de9
+      }
+      ul {
+        padding-left: 20px;
+        padding-top: 0px;
       }
       li {
         display: inline-block;
+        padding-right: 15px;
       }
       footer {
-        border-top: 1px solid grey;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 25px;
         background-color: #2222;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer a {
+        padding-right: 25px;
+        color: #70757a;
+      }
+      .container-right{
+        margin-right: 100px;
+      }
+      .container-left {
+        margin-left: 100px;
       }
     </style>
 
@@ -56,27 +100,35 @@
       </ul>
       </div>
       <div class="sign-in">
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <button>Sign in</button>
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li><i class="fa-solid fa-grid"></i></li>
+          <li><button id="sign-in-button">Sign in</button></li>
+      </ul>
       </div>
     </div>
     
     <!-- Logo -->
-    <div class="logo center">
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-    </div>
-    
-    <!-- Search bar -->
-    <div class="search center">
-      <form>
-        <input type="text">
-      </form>
-    </div>
+    <div class="center">
 
-    <div class="submit center">
-      <button>Google Search</button>
-      <button>I'm Feeling Lucky</button>
+      <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+      </div>
+      
+      <!-- Search bar -->
+      
+      <div class="search">
+        <form>
+          <input type="text">
+        </form>
+      </div>
+
+      <div class="submit">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+
     </div>
 
     <!-- Footer -->
