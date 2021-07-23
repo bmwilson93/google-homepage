@@ -32,7 +32,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
-  gap: 60%;
 }
 
 .footer {
@@ -74,12 +73,17 @@ a:hover {
 input {
   height: 40px;
   width: 500px;
+  background-color: transparent;
   padding: 0px, 40px;
   border-width: 1pt;
   border-style: solid;
   border-color: rgba(201, 202, 201, 0.973);
   border-radius: 50px;
   margin-bottom: 20px;
+}
+
+input:hover {
+  box-shadow: 2px 2px 3px rgba(201, 202, 201, 0.973), -1px -1px 3px rgba(201, 202, 201, 0.973);
 }
 
 .submit-buttons button{
