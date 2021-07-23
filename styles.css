@@ -1,7 +1,41 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    height: auto;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    background-color: green;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: #2222;
+    display: flex;
+    justify-content: space-between;
+  }
+/*
+  
+  
   .center {
     padding-top: 20%;
     display: flex;
@@ -97,3 +131,4 @@ body {
   .container-left {
     margin-left: 100px;
   }
+  */
