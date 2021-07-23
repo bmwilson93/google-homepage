@@ -41,6 +41,8 @@ body {
   .navbar {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1em;
+    gap: 60%;
   }
 
   .footer {
@@ -51,6 +53,18 @@ body {
     background-color: #2222;
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .icon {
+    color: #5f6368;
+    fill: currentColor;
+    line-height: 27px;
   }
 
   .footer-links {
