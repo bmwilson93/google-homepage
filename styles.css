@@ -80,7 +80,7 @@ input {
   border-color: rgba(201, 202, 201, 0.973);
   border-radius: 50px;
   margin-bottom: 20px;
-  }
+}
 
 .submit-buttons button{
   background-color: #f8f9fa;
@@ -100,4 +100,10 @@ input {
   color: #5f6368;
   fill: currentColor;
   line-height: 27px;
+}
+
+.search-icon {
+  color: #9aa0a6;
+  fill: currentColor;
+  position: absolute;
 }
