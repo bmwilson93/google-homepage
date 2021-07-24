@@ -58,6 +58,10 @@ a:hover {
   gap: 1em;
 }
 
+img {
+  width: 100%;
+}
+
 #sign-in-button {
   padding: 8px 25px 8px 25px;
   background: #1a73e8;
@@ -79,7 +83,6 @@ input {
   border-style: solid;
   border-color: rgba(201, 202, 201, 0.973);
   border-radius: 50px;
-  margin-bottom: 20px;
 }
 
 input:hover {
